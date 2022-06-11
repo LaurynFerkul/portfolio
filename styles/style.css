@@ -308,6 +308,17 @@ h2 {
 
 h1 {
   font-weight: 900;
+  font-size: 20vw;
+  text-align: center;
+  position: relative;
+  -webkit-animation: load 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: load 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+h1 span {
+  font-size: 8vw;
+  position: absolute;
+  top: 0;
+  right: 21%;
 }
 
 h2 {
@@ -325,4 +336,141 @@ h3 {
 
 p {
   font-weight: 400;
+}
+
+/******* BASE STYLES START (common styles seen throughout the website)*******/
+html {
+  background-color: #F5F5F5;
+}
+
+.wrapper {
+  max-width: 2000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContent {
+  position: relative;
+  margin: 0 auto;
+}
+.headerContent svg {
+  right: -5%;
+  position: absolute;
+  top: 0;
+  -webkit-animation: rotate 4s infinite linear, pop 5s 1 ease;
+          animation: rotate 4s infinite linear, pop 5s 1 ease;
+}
+
+.line {
+  border: 1px solid #206BB1;
+  height: 10%;
+  width: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes load {
+  from {
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+@keyframes bounce {
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  35% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pop {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  35% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }

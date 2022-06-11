@@ -102,9 +102,20 @@ h2 {
 
 h1 {
     font-weight: 900;
+    font-size: 20vw;
+    text-align: center;
+    position: relative;
+    span {
+        font-size: 8vw;
+        position: absolute;
+        top: 0;
+        right: 21%;
+    
+    }
+    animation: load 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-h2{ 
+h2 { 
     font-weight: 400;
 }
 

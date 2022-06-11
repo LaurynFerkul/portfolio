@@ -1,0 +1,30 @@
+// HEADER STYLES START HERE
+header .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerContent { 
+    position: relative;
+    margin: 0 auto;
+    svg {
+        right: -5%;
+        position: absolute;
+        top: 0;
+        animation: rotate 4s infinite linear, pop 5s 1 ease;
+    }
+}
+
+
+.line {
+    border: 1px solid $font;
+    height: 10%;
+    width: 0;
+    align-self: center;
+    animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+
+// HEADER STYLES END HERE
