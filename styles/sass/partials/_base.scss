@@ -1,6 +1,9 @@
 /******* BASE STYLES START (common styles seen throughout the website)*******/
 html {
     background-color: $background;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
 }
 
 .wrapper {

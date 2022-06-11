@@ -292,16 +292,22 @@ html {
   font-display: swap;
   font-style: normal;
 }
+html {
+  font-size: 125%;
+}
+
 h1,
 h2,
 h3,
-p {
+p,
+.htmlTags {
   margin: 0;
   color: #206BB1;
 }
 
 h1,
-h2 {
+h2,
+.htmlTags {
   font-family: "Zodiak";
   font-size: 3rem;
 }
@@ -338,9 +344,17 @@ p {
   font-weight: 400;
 }
 
+.htmlTags {
+  font-weight: 300;
+}
+
 /******* BASE STYLES START (common styles seen throughout the website)*******/
 html {
-  background-color: #F5F5F5;
+  background-color: #F6F5F1;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
 
 .wrapper {
@@ -371,8 +385,8 @@ header .wrapper {
   right: -5%;
   position: absolute;
   top: 0;
-  -webkit-animation: rotate 4s infinite linear, pop 5s 1 ease;
-          animation: rotate 4s infinite linear, pop 5s 1 ease;
+  -webkit-animation: rotate 6s infinite linear, pop 5s 1 ease;
+          animation: rotate 6s infinite linear, pop 5s 1 ease;
 }
 
 .line {
@@ -383,6 +397,59 @@ header .wrapper {
       align-self: center;
   -webkit-animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
           animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+.introSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+}
+.introSection .introContent {
+  scroll-snap-align: center;
+}
+.introSection p {
+  font-family: "Zodiak";
+  text-align: center;
+  font-size: 3vw;
+}
+.introSection p strong {
+  font-weight: 700;
+}
+.introSection p .htmlTags {
+  font-size: 3vw;
+}
+
+.spinningAnimation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.spinningWheel {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  -webkit-animation: rotate 10s infinite linear;
+          animation: rotate 10s infinite linear;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes load {

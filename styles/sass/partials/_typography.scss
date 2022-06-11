@@ -85,17 +85,22 @@
     font-display: swap;
     font-style: normal;
 }
+html {
+    font-size: 125%;
+}
 
 h1, 
 h2, 
 h3, 
-p {
+p,
+.htmlTags {
     margin: 0;
     color: $font;
 }
 
 h1,
-h2 {
+h2,
+.htmlTags {
     font-family: $headingFont;
     font-size: 3rem;
 }
@@ -130,4 +135,8 @@ h3 {
 
 p {
     font-weight: 400;
+}
+
+.htmlTags {
+    font-weight: 300;
 }

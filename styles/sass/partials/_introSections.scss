@@ -1,0 +1,37 @@
+.introSection {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    .introContent {
+        scroll-snap-align: center;
+    }
+    p {
+        font-family: $headingFont;
+        text-align: center;
+        font-size: 3vw;
+        strong {
+            font-weight: 700;
+        }
+        .htmlTags {
+            font-size: 3vw;
+        }
+    }
+}
+
+.spinningAnimation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.spinningWheel{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
+    animation: rotate 10s infinite linear;
+    margin: 0 auto;
+}
