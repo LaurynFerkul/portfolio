@@ -30,7 +30,7 @@ header {
         animation: position 3s;
 
         h1 {
-            font-size: 3vw;
+            font-size: 4vw;
             animation: shrink 3s;
             span {
                 opacity: 0;
@@ -81,11 +81,10 @@ header {
                 font-size: 3vw;
                 line-height: 3vw;
             }
-    
             .htmlTags {
                 font-size: 3vw;
             }
-        }
+    }
 }
 
 .spinningWheel {

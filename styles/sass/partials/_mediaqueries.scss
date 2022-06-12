@@ -1,28 +1,127 @@
-@media (max-width: 1355px) { 
-    .headerIntro {
-            // svg {
-            //     right: -15%;
-            // }
-            &.active {
-                svg {
-  
-                    right: -60%;
+@media (min-width: 1870px) {
 
+    /******************* HEADER MEDIA QUERIES START (LARGE SCREEN) *****************************/
+    .headerIntro {
+        h1 {
+            font-size: 19rem;
+            span {
+                    font-size: 8rem;
+                    right: 18%;
+            
                 }
         }
+        &.active {
+            svg {
+                right: -40%;
+            }
+
+            h1 {
+                font-size: 3rem;
+                animation: shrink 3s;
+            }
+        }
     }
+
+    // .introSentence {
+    //     &.active {
+    //         p {
+    //             font-size: 5vw;
+    //             line-height: 5vw;
+
+    //             strong {
+    //                 font-size: 5vw;
+    //                 line-height: 5vw;
+    //             }
+
+    //             .htmlTags {
+    //                 font-size: 5vw;
+    //             }
+    //         }
+    //     }
+    // }
+
+    /******************* HEADER MEDIA QUERIES END (LARGE SCREEN) *****************************/
+
+    /******************* KEYFRAMES MEDIA QUERIES START (LARGE SCREEN)*****************************/
+    @keyframes shrink {
+        from {
+            font-size: 19rem;
+
+        }
+
+        to {
+            font-size: 10rem;
+        }
+    }
+    /******************* KEYFRAMES MEDIA QUERIES END (LARGE SCREEN) *****************************/
+}
+
+@media (max-width: 1355px) { 
+    /******************* HEADER MEDIA QUERIES START (LARGE SCREEN)*****************************/
+    .headerIntro {
+            &.active {
+                svg {
+                    right: -35%;
+            }
+            h1 {
+                font-size: 6vw;
+                animation: shrink 3s;
+            }
+        }
+    }
+
+    .introSentence{
+        &.active {
+            p {
+                font-size: 5vw;
+                line-height: 5vw;
+                strong {
+                    font-size: 5vw;
+                    line-height: 5vw;
+                }
+                .htmlTags {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+    /******************* HEADER MEDIA QUERIES END (TABLET) *****************************/
+
+    /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
+    @keyframes shrink {
+        from {
+            font-size: 20vw;
+
+        }
+
+        to {
+            font-size: 6vw;
+        }
+    }
+
+    @keyframes changePosition {
+        from {
+            right: -5%;
+        }
+
+        to {
+            right: -35%;
+        }
+    }
+    /******************* KEYFRAMES MEDIA QUERIES END (TABLET) *****************************/
 }
 
 @media (max-width: 700px) {
+    /******************* HEADER MEDIA QUERIES START (MOBILE) *****************************/
     .headerIntro {
         svg {
             top: -35%;
         }
         &.active{
             svg {
-                right: -60%;
                 top: -10%;
             }
         }
     }
+    /******************* HEADER MEDIA QUERIES END (MOBILE) *****************************/
 }
