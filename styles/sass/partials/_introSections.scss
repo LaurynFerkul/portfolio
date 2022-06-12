@@ -1,11 +1,7 @@
-.introSection {
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 60vh;
-    .introContent {
-        scroll-snap-align: center;
+
+    .introSentence {
+        
+        height: 90vh;
     }
     p {
         font-family: $headingFont;
@@ -18,7 +14,7 @@
             font-size: 3vw;
         }
     }
-}
+
 
 .spinningAnimation{
     position: relative;

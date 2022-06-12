@@ -4,9 +4,23 @@ header .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: stopScroll 20s 1;
+
 }
 
-.headerContent { 
+@keyframes stopScroll {
+    0% {
+        overflow-y: hidden;
+    }
+    99% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: scroll;
+    }
+}
+
+.headerIntro { 
     position: relative;
     margin: 0 auto;
     svg {
@@ -25,6 +39,77 @@ header .wrapper {
     align-self: center;
     animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
+header .active {
+    height: 100vh;
+}
+header .wrapper.active {
+    height: 10vh;
+    justify-content: flex-start;
+    top: 0;
+    animation: shrinkHeight 2s;
+    .headerIntro.active{
+        margin: 30px auto;
+        animation: position 2s;
+        h1{
+            font-size: 3vw;
+            animation: shrink 2s;
+            span{
+                display: none;
+            }
+        }
+        svg{
+            animation: reduceSize 2s, changePosition 2s;
+            right: -45%;
+            height: 20px;
+        }
+    }
+    .line {
+        display: none;
+    }
+}
 
+@keyframes shrinkHeight {
+    from{
+        height: 100vh;
+    }
+    to {
+        height: 10vh;
+    }
+}
+@keyframes position {
+    from {
+        top: 50%
+    }
+    to {
+        top: 0;
+    }
+}
 
+@keyframes shrink {
+    from {
+        font-size: 20vw;
+    }
+    to {
+        font-size: 3vw;
+    }
+}
+
+@keyframes reduceSize {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 20px;
+    }
+}
+
+@keyframes changePosition {
+    from {
+        right: -5%;
+    }
+
+    to {
+        right: -45%;
+    }
+}
 // HEADER STYLES END HERE

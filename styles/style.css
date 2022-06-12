@@ -352,8 +352,6 @@ p {
 html {
   background-color: #F6F5F1;
   overflow-x: hidden;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
   overflow-y: scroll;
 }
 
@@ -375,13 +373,38 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: stopScroll 20s 1;
+          animation: stopScroll 20s 1;
 }
 
-.headerContent {
+@-webkit-keyframes stopScroll {
+  0% {
+    overflow-y: hidden;
+  }
+  99% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: scroll;
+  }
+}
+
+@keyframes stopScroll {
+  0% {
+    overflow-y: hidden;
+  }
+  99% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: scroll;
+  }
+}
+.headerIntro {
   position: relative;
   margin: 0 auto;
 }
-.headerContent svg {
+.headerIntro svg {
   right: -5%;
   position: absolute;
   top: 0;
@@ -399,31 +422,136 @@ header .wrapper {
           animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-.introSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 60vh;
+header .active {
+  height: 100vh;
 }
-.introSection .introContent {
-  scroll-snap-align: center;
+
+header .wrapper.active {
+  height: 10vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: 0;
+  -webkit-animation: shrinkHeight 2s;
+          animation: shrinkHeight 2s;
 }
-.introSection p {
+header .wrapper.active .headerIntro.active {
+  margin: 30px auto;
+  -webkit-animation: position 2s;
+          animation: position 2s;
+}
+header .wrapper.active .headerIntro.active h1 {
+  font-size: 3vw;
+  -webkit-animation: shrink 2s;
+          animation: shrink 2s;
+}
+header .wrapper.active .headerIntro.active h1 span {
+  display: none;
+}
+header .wrapper.active .headerIntro.active svg {
+  -webkit-animation: reduceSize 2s, changePosition 2s;
+          animation: reduceSize 2s, changePosition 2s;
+  right: -45%;
+  height: 20px;
+}
+header .wrapper.active .line {
+  display: none;
+}
+
+@-webkit-keyframes shrinkHeight {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+
+@keyframes shrinkHeight {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 10vh;
+  }
+}
+@-webkit-keyframes position {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes position {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes shrink {
+  from {
+    font-size: 20vw;
+  }
+  to {
+    font-size: 3vw;
+  }
+}
+@keyframes shrink {
+  from {
+    font-size: 20vw;
+  }
+  to {
+    font-size: 3vw;
+  }
+}
+@-webkit-keyframes reduceSize {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 20px;
+  }
+}
+@keyframes reduceSize {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 20px;
+  }
+}
+@-webkit-keyframes changePosition {
+  from {
+    right: -5%;
+  }
+  to {
+    right: -45%;
+  }
+}
+@keyframes changePosition {
+  from {
+    right: -5%;
+  }
+  to {
+    right: -45%;
+  }
+}
+.introSentence {
+  height: 90vh;
+}
+
+p {
   font-family: "Zodiak";
   text-align: center;
   font-size: 3vw;
 }
-.introSection p strong {
+p strong {
   font-weight: 700;
 }
-.introSection p .htmlTags {
+p .htmlTags {
   font-size: 3vw;
 }
 
