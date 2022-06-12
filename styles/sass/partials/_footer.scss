@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    svg{
+        flex-basis: 50%;
+    }
+    p {
+        align-self: flex-end;
+        text-align: right;
+    }
+}

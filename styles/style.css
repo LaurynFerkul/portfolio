@@ -379,7 +379,7 @@ a {
   text-transform: uppercase;
 }
 a:hover, a:focus {
-  color: orange;
+  color: #FEBC65;
 }
 
 /******* BASE STYLES START (common styles seen throughout the website)*******/
@@ -588,8 +588,8 @@ header .wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 70%;
-  margin: 25% 0;
   position: relative;
+  margin: 25% auto;
 }
 .aboutMe h2 {
   margin-top: 10%;
@@ -692,8 +692,8 @@ header .wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 70%;
-  margin: 25% 0;
   position: relative;
+  margin: 25% auto;
 }
 .aboutMe h2 {
   margin-top: 10%;
@@ -730,7 +730,7 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 25% 0;
+  margin: 15% 0;
 }
 .projects h2 {
   text-align: center;
@@ -908,6 +908,32 @@ form button:hover .htmlTags, form button:focus .htmlTags {
   text-transform: lowercase;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+.contactOptions a:hover, .contactOptions a:focus {
+  color: #FEBC65;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+footer svg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+footer p {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
 }
 
 @-webkit-keyframes load {

@@ -85,5 +85,8 @@ form {
         text-transform: lowercase;
         font-size: 1.4rem;
         line-height: 2rem;
+        &:hover, &:focus {
+            color: #FEBC65;
+        }
     }
 }
