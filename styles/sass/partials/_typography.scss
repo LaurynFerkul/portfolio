@@ -122,6 +122,12 @@ h1 {
 
 h2 { 
     font-weight: 400;
+    font-size: 7rem;
+    line-height: 7rem;
+    .htmlTags {
+            font-weight: 300;
+            font-size: 7rem;
+        }
 }
 
 h3, 
@@ -135,8 +141,12 @@ h3 {
 
 p {
     font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    strong {
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+
 }
 
-.htmlTags {
-    font-weight: 300;
-}

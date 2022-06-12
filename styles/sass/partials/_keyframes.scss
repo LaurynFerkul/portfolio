@@ -39,3 +39,56 @@
             transform: rotate(360deg);
         }
 }
+
+@keyframes shrinkHeight {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 10vh;
+    }
+}
+
+@keyframes position {
+    from {
+        top: 50%
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes shrink {
+    from {
+        font-size: 20vw;
+
+    }
+
+    to {
+        font-size: 3vw;
+
+
+    }
+}
+
+@keyframes reduceSize {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 20px;
+    }
+}
+
+@keyframes changePosition {
+    from {
+        right: -5%;
+    }
+
+    to {
+        right: -45%;
+    }
+}

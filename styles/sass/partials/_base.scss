@@ -1,13 +1,12 @@
 /******* BASE STYLES START (common styles seen throughout the website)*******/
 html {
     background-color: $background;
-    overflow-x: hidden;
-    // scroll-snap-type: y proximity;
-    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
 }
 
 .wrapper {
-    max-width: 2000px;
+    max-width: 1800px;
     width: 90%;
     margin: 0 auto;
 }

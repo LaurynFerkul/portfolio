@@ -4,6 +4,7 @@ const introSentence = document.querySelector('.introSentence');
 
 const headerWrapper = document.querySelector('header .wrapper');
 
+
 console.log(introSentence);
 function debounce(func, wait = 20, immediate = true) {
     var timeout;
@@ -45,6 +46,7 @@ function animateIntro(e) {
         introSentence.classList.add('active');
         headerIntro.classList.add('active');
         headerWrapper.classList.add('active');
+
     }
 
     // console.log(animateAt);
