@@ -93,6 +93,7 @@ h1,
 h2, 
 h3, 
 p,
+a,
 .htmlTags {
     margin: 0;
     color: $font;
@@ -100,6 +101,7 @@ p,
 
 h1,
 h2,
+h3,
 .htmlTags {
     font-family: $headingFont;
     font-size: 3rem;
@@ -130,13 +132,22 @@ h2 {
         }
 }
 
-h3, 
-p {
+h3 {
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: 7rem;
+}
+
+p,
+a {
     font-family: $bodyFont;
 }
 
 h3 {
-    font-weight: 800;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 25px;
 }
 
 p {
@@ -144,9 +155,20 @@ p {
     font-size: 1.4rem;
     line-height: 2rem;
     strong {
+        font-weight: 800;
         font-size: 1.2rem;
         line-height: 4rem;
     }
 
+}
+
+a {
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    &:hover, &:focus {
+        color: orange;
+    }
 }
 
