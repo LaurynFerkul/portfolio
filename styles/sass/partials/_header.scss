@@ -18,15 +18,33 @@ header {
 
 .headerIntro { 
     position: relative;
-    margin: 0 auto;
     svg {
         right: -5%;
         position: absolute;
         top: 0;
+        max-width: 12vw;
         animation: rotate 6s infinite linear, pop 5s 1 ease;
     }
-}
+    &.active {
+        margin: 30px auto;
+        animation: position 3s;
 
+        h1 {
+            font-size: 3vw;
+            animation: shrink 3s;
+            span {
+                opacity: 0;
+                transform: scale(0);
+                animation: fadeOut 1s 1;
+            }
+        }
+        svg {
+            animation: reduceSize 2s, changePosition 2s;
+            right: -45%;
+            height: 20px;
+        }
+    }
+}
 
 .line {
     border: 1px solid $font;
@@ -36,7 +54,7 @@ header {
     animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-.headerTitle.wrapper.active {
+.headerTitle.active {
     height: 10vh;
     justify-content: flex-start;
     top: 0;
@@ -46,39 +64,8 @@ header {
         animation: fadeOut 1s 1;
     }
 }
-.headerIntro.active {
-    margin: 30px auto;
-    animation: position 3s;
-    h1 {
-        font-size: 3vw;
-        animation: shrink 3s;
 
-        span {
-            opacity: 0;
-            transform: scale(0);
-            animation: fadeOut 1s 1;
-        }
-    }
-
-    svg {
-        animation: reduceSize 2s, changePosition 2s;
-        right: -45%;
-        height: 20px;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
-    to {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
-.introSentence.wrapper.active {
+.introSentence.active {
     flex-basis: 70vh;
     display: flex;
     align-content: center;
@@ -87,10 +74,12 @@ header {
             font-family: $headingFont;
             text-align: center;
             font-size: 3vw;
+            line-height: 3vw;
     
             strong {
                 font-weight: 700;
                 font-size: 3vw;
+                line-height: 3vw;
             }
     
             .htmlTags {
@@ -99,25 +88,7 @@ header {
         }
 }
 
-
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
 .spinningWheel {
-    // position: absolute;
-    // bottom: -100%;
-    // left: 0;
-    // right: 0;
     animation: rotate 10s infinite linear;
     margin: 0 auto;
     width: 50%;

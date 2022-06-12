@@ -441,41 +441,15 @@ header .wrapper {
 
 .headerIntro {
   position: relative;
-  margin: 0 auto;
 }
 .headerIntro svg {
   right: -5%;
   position: absolute;
   top: 0;
+  max-width: 12vw;
   -webkit-animation: rotate 6s infinite linear, pop 5s 1 ease;
           animation: rotate 6s infinite linear, pop 5s 1 ease;
 }
-
-.line {
-  border: 1px solid #206BB1;
-  height: 10%;
-  width: 0;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
-          animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.headerTitle.wrapper.active {
-  height: 10vh;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  top: 0;
-  -webkit-animation: shrinkHeight 3s;
-          animation: shrinkHeight 3s;
-}
-.headerTitle.wrapper.active .line {
-  opacity: 0;
-  -webkit-animation: fadeOut 1s 1;
-          animation: fadeOut 1s 1;
-}
-
 .headerIntro.active {
   margin: 30px auto;
   -webkit-animation: position 3s;
@@ -500,32 +474,32 @@ header .wrapper {
   height: 20px;
 }
 
-@-webkit-keyframes fadeOut {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
+.line {
+  border: 1px solid #206BB1;
+  height: 10%;
+  width: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
+          animation: bounce 1s infinite linear, load 2s 2s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-@keyframes fadeOut {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    opacity: 0;
-  }
+.headerTitle.active {
+  height: 10vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: 0;
+  -webkit-animation: shrinkHeight 3s;
+          animation: shrinkHeight 3s;
 }
-.introSentence.wrapper.active {
+.headerTitle.active .line {
+  opacity: 0;
+  -webkit-animation: fadeOut 1s 1;
+          animation: fadeOut 1s 1;
+}
+
+.introSentence.active {
   -ms-flex-preferred-size: 70vh;
       flex-basis: 70vh;
   display: -webkit-box;
@@ -536,42 +510,21 @@ header .wrapper {
   -webkit-animation: fadeIn 3s 1;
           animation: fadeIn 3s 1;
 }
-.introSentence.wrapper.active p {
+.introSentence.active p {
   font-family: "Zodiak";
   text-align: center;
   font-size: 3vw;
+  line-height: 3vw;
 }
-.introSentence.wrapper.active p strong {
+.introSentence.active p strong {
   font-weight: 700;
   font-size: 3vw;
+  line-height: 3vw;
 }
-.introSentence.wrapper.active p .htmlTags {
+.introSentence.active p .htmlTags {
   font-size: 3vw;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .spinningWheel {
   -webkit-animation: rotate 10s infinite linear;
           animation: rotate 10s infinite linear;
@@ -619,7 +572,7 @@ header .wrapper {
   right: -12%;
 }
 .aboutMe .quotes {
-  bottom: 5%;
+  bottom: -10%;
   left: 5%;
 }
 
@@ -751,7 +704,7 @@ header .wrapper {
   right: -12%;
 }
 .aboutMe .quotes {
-  bottom: 5%;
+  bottom: -10%;
   left: 5%;
 }
 
@@ -1151,5 +1104,65 @@ footer p {
   }
   to {
     right: -45%;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+@media (max-width: 1355px) {
+  .headerIntro.active svg {
+    right: -60%;
+  }
+}
+@media (max-width: 700px) {
+  .headerIntro svg {
+    top: -35%;
+  }
+  .headerIntro.active svg {
+    right: -60%;
+    top: -10%;
   }
 }

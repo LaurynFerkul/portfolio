@@ -1,0 +1,28 @@
+@media (max-width: 1355px) { 
+    .headerIntro {
+            // svg {
+            //     right: -15%;
+            // }
+            &.active {
+                svg {
+  
+                    right: -60%;
+
+                }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .headerIntro {
+        svg {
+            top: -35%;
+        }
+        &.active{
+            svg {
+                right: -60%;
+                top: -10%;
+            }
+        }
+    }
+}
