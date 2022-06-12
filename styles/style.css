@@ -1253,7 +1253,27 @@ footer p {
     left: -30%;
   }
 
-  /******************* ABOUT ME SECTION MEDIA QUERIES START (TABLET)*****************************/
+  /******************* ABOUT ME SECTION MEDIA QUERIES END (TABLET)*****************************/
+  /******************* TOOLKIT SECTION MEDIA QUERIES START (TABLET)*****************************/
+  .toolkit ul {
+    max-width: 80%;
+  }
+  .toolkit .asterik {
+    top: -15%;
+  }
+  .toolkit .hashtag {
+    top: 22%;
+    right: -20%;
+  }
+  .toolkit .semicolon {
+    top: 8%;
+    left: -6%;
+  }
+  .toolkit .curlyBracket {
+    right: 5%;
+  }
+
+  /******************* TOOLKIT SECTION MEDIA QUERIES END (TABLET)*****************************/
   /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
   @-webkit-keyframes shrink {
     from {
@@ -1319,6 +1339,7 @@ footer p {
   }
 
   /******************* HEADER MEDIA QUERIES END (MOBILE) *****************************/
+  /******************* ABOUT ME SECTION MEDIA QUERIES START (MOBILE)*****************************/
   .aboutMe .right {
     bottom: -5%;
   }
@@ -1326,4 +1347,23 @@ footer p {
     bottom: -12%;
     left: -50%;
   }
+
+  /******************* ABOUT ME SECTION MEDIA QUERIES END (MOBILE)*****************************/
+  /******************* TOOLKIT SECTION MEDIA QUERIES START (MOBILE)*****************************/
+  .toolkit ul {
+    max-width: 100%;
+  }
+  .toolkit .hashtag {
+    top: 5%;
+    right: -25%;
+    max-width: 50%;
+  }
+  .toolkit .semicolon {
+    left: -15%;
+  }
+  .toolkit .curlyBracket {
+    left: -10%;
+  }
+
+  /******************* TOOLKIT SECTION MEDIA QUERIES END (MOBILE)*****************************/
 }
