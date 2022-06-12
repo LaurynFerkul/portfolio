@@ -129,7 +129,11 @@ h2 {
     .htmlTags {
             font-weight: 300;
             font-size: 7rem;
-        }
+    }
+    strong {
+        font-weight: 700;
+        font-style: italic;
+    }
 }
 
 h3 {
@@ -171,4 +175,3 @@ a {
         color: orange;
     }
 }
-

@@ -1,0 +1,89 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+        flex-basis: 50%;
+    }
+}
+
+.contactInfo {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input,
+    textarea {
+        font-family: $bodyFont;
+        color: $font;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding: 20px 0 20px 20px;
+        border: none;
+        border-bottom: 3px solid $font;
+        background-color: transparent;
+        &::placeholder {
+            color: $font;
+        }
+    }
+
+    textarea {
+        max-width: 100%;
+        border: 3px solid $font;
+        resize: none;
+        padding: 20px;
+        margin: 15px 0;
+    }
+    button {
+        font-family: $bodyFont;
+        color: $font;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 3px solid $font;
+        padding: 10px 20px;
+        margin: 0 auto;
+        .htmlTags{
+            font-family: $bodyFont;
+            color: $font;
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+        &:hover, &:focus {
+            background-color: $font;
+            color: $background;
+            .htmlTags {
+                color: $background;
+            }
+        }
+    }
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: center;
+    svg {
+        margin: 10px 10px;
+    }
+}
+
+.contactOptions {
+    margin: 0 auto;
+
+    a {
+        font-family: $bodyFont;
+        color: $font;
+        font-weight: 400;
+        text-transform: lowercase;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}

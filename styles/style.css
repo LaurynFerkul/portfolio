@@ -338,6 +338,10 @@ h2 .htmlTags {
   font-weight: 300;
   font-size: 7rem;
 }
+h2 strong {
+  font-weight: 700;
+  font-style: italic;
+}
 
 h3 {
   font-weight: 400;
@@ -776,6 +780,134 @@ header .wrapper {
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 50%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact h2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contactInfo {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input,
+form textarea {
+  font-family: "CabinetGrotesk";
+  color: #206BB1;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 20px 0 20px 20px;
+  border: none;
+  border-bottom: 3px solid #206BB1;
+  background-color: transparent;
+}
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+  color: #206BB1;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder {
+  color: #206BB1;
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+  color: #206BB1;
+}
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+  color: #206BB1;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #206BB1;
+}
+form textarea {
+  max-width: 100%;
+  border: 3px solid #206BB1;
+  resize: none;
+  padding: 20px;
+  margin: 15px 0;
+}
+form button {
+  font-family: "CabinetGrotesk";
+  color: #206BB1;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 3px solid #206BB1;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+form button .htmlTags {
+  font-family: "CabinetGrotesk";
+  color: #206BB1;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+form button:hover, form button:focus {
+  background-color: #206BB1;
+  color: #F6F5F1;
+}
+form button:hover .htmlTags, form button:focus .htmlTags {
+  color: #F6F5F1;
+}
+
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.socialLinks svg {
+  margin: 10px 10px;
+}
+
+.contactOptions {
+  margin: 0 auto;
+}
+.contactOptions a {
+  font-family: "CabinetGrotesk";
+  color: #206BB1;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 @-webkit-keyframes load {
