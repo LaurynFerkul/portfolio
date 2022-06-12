@@ -1,0 +1,39 @@
+.toolkit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    ul {
+            max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        li {
+            flex-basis: calc((100% / 3) - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            transform: scale(1);
+            margin: 10px;
+            p{
+                opacity: 0;
+            }
+            &:hover {
+                transform: scale(1.1);
+                svg path{
+                    fill-opacity: 1;
+                    stroke-width: 0;
+                }
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -6,8 +6,15 @@ html {
 }
 
 .wrapper {
-    max-width: 1800px;
+    max-width: 1400px;
     width: 90%;
     margin: 0 auto;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
