@@ -21,25 +21,6 @@
             }
         }
     }
-
-    // .introSentence {
-    //     &.active {
-    //         p {
-    //             font-size: 5vw;
-    //             line-height: 5vw;
-
-    //             strong {
-    //                 font-size: 5vw;
-    //                 line-height: 5vw;
-    //             }
-
-    //             .htmlTags {
-    //                 font-size: 5vw;
-    //             }
-    //         }
-    //     }
-    // }
-
     /******************* HEADER MEDIA QUERIES END (LARGE SCREEN) *****************************/
 
     /******************* KEYFRAMES MEDIA QUERIES START (LARGE SCREEN)*****************************/
@@ -57,7 +38,26 @@
 }
 
 @media (max-width: 1355px) { 
-    /******************* HEADER MEDIA QUERIES START (LARGE SCREEN)*****************************/
+    /******************* TYPOGRAPHY MEDIA QUERIES START (TABLET)*****************************/
+    h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+
+        .htmlTags {
+            font-size: 5rem;
+        }
+    }
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        strong {
+            font-size: .9rem;
+            line-height: 3rem;
+        }
+    }
+    /******************* TYPOGRAPHY MEDIA QUERIES END(TABLET)*****************************/
+
+    /******************* HEADER MEDIA QUERIES START (TABLET)*****************************/
     .headerIntro {
             &.active {
                 svg {
@@ -87,6 +87,32 @@
     }
     /******************* HEADER MEDIA QUERIES END (TABLET) *****************************/
 
+    /******************* ABOUT ME SECTION MEDIA QUERIES START (TABLET)*****************************/
+    .aboutMe {
+        flex-direction: column;
+        .aboutParagraph {
+            padding: 0;
+            flex-basis: 0;
+        }
+        .left {
+            top: 0;
+        }
+        .quotes {
+            bottom: -15%;
+                left: -30%;
+        }
+    }
+
+    // .asterik {
+    //     top: 0;
+    //     right: -5%;
+    // }
+    // .hashtag {
+    //     top: 20%;
+    //         right: -20%;
+    // }
+    /******************* ABOUT ME SECTION MEDIA QUERIES START (TABLET)*****************************/
+
     /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
     @keyframes shrink {
         from {
@@ -112,6 +138,26 @@
 }
 
 @media (max-width: 700px) {
+    
+    /******************* TYPOGRAPHY MEDIA QUERIES START (MOBILE)*****************************/
+        h2 {
+            font-size: 3rem;
+            line-height: 3rem;
+            text-align: center;
+            .htmlTags {
+                font-size: 3rem;
+            }
+        }
+        p {
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+            strong {
+                font-size: 0.7rem;
+                line-height: 2rem;
+            }
+        }
+    /******************* TYPOGRAPHY MEDIA QUERIES END (MOBILE)*****************************/
+
     /******************* HEADER MEDIA QUERIES START (MOBILE) *****************************/
     .headerIntro {
         svg {
