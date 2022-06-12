@@ -1,7 +1,8 @@
 .projects {
     display: flex;
     flex-direction: column;
-    margin: 15% 0;
+    margin: 20% 0;
+    position: relative;
     h2{
         text-align: center;
         align-self: flex-start;
@@ -31,5 +32,21 @@
                 max-width: 50%;
             }
         }
+    }
+    svg {
+        position: absolute;
+    }
+    .exclamationMark {
+        top: 25%;
+        left: 10%;
+    }
+
+    .quotes {
+        top: 55%;
+        right: 10%;
+    }
+
+    .arrowFunction {
+        bottom: 15%;
     }
 }

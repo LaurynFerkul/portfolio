@@ -1,7 +1,7 @@
 .aboutMe {
     display: flex;
     flex-direction: row;
-    max-width: 70%;
+    max-width: 80%;
     position: relative;
     margin: 25% auto;
 
@@ -18,17 +18,23 @@
         }
     }
     svg{ 
-        width: 10%;
         position: absolute;
     }
     .left {
+        width: 10%;
         top: -12%;
         left: -12%;
     }
 
     .right {
+        width: 10%;
         bottom: -12%;
         right: -12%;
 
+    }
+
+    .quotes {
+        bottom: 5%;
+        left: 5%;
     }
 }
