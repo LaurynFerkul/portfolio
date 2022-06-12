@@ -1319,4 +1319,11 @@ footer p {
   }
 
   /******************* HEADER MEDIA QUERIES END (MOBILE) *****************************/
+  .aboutMe .right {
+    bottom: -5%;
+  }
+  .aboutMe .quotes {
+    bottom: -12%;
+    left: -50%;
+  }
 }
