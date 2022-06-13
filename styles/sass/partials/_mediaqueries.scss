@@ -42,10 +42,13 @@
     h2 {
         font-size: 5rem;
         line-height: 5rem;
-
         .htmlTags {
             font-size: 5rem;
         }
+    }
+    h3 {
+        font-size: 4rem;
+        line-height: 4rem;
     }
     p {
         font-size: 1.1rem;
@@ -54,6 +57,17 @@
             font-size: .9rem;
             line-height: 3rem;
         }
+    }
+
+    strong {
+        font-size: .9rem;
+        line-height: 3rem;
+    }
+
+    a {
+        font-size: .9rem;
+        line-height: 3rem;
+        text-align: center;
     }
     /******************* TYPOGRAPHY MEDIA QUERIES END(TABLET)*****************************/
 
@@ -99,18 +113,10 @@
         }
         .quotes {
             bottom: -15%;
-                left: -30%;
+            left: -20%;
         }
     }
 
-    // .asterik {
-    //     top: 0;
-    //     right: -5%;
-    // }
-    // .hashtag {
-    //     top: 20%;
-    //         right: -20%;
-    // }
     /******************* ABOUT ME SECTION MEDIA QUERIES END (TABLET)*****************************/
     
     /******************* TOOLKIT SECTION MEDIA QUERIES START (TABLET)*****************************/
@@ -119,21 +125,45 @@
             max-width: 80%;
         }
         .asterik {
-            top: -15%;
+            top: 0;
+            right: -5%;
         }
         .hashtag {
-            top: 22%;
-            right: -20%;
+            display: none;
         }
         .semicolon {
-            top: 8%;
-            left: -6%;
+            top: 95%;
+            left: -5%;
         }
         .curlyBracket {
-            right: 5%;
+            right: -13%;
         }
     }
     /******************* TOOLKIT SECTION MEDIA QUERIES END (TABLET)*****************************/
+
+    /******************* PROJECT SECTION MEDIA QUERIES START (TABLET)*****************************/
+    .projects {
+        h2 {
+            align-self: center;
+        }
+        ul {
+            li {
+                max-width: 100%;
+                margin: 40px 0;
+            }
+        }
+        .exclamationMark{
+            top: 31%;
+        }
+        .quotes {
+            top: 61%;
+        }
+        .arrowFunction{
+            bottom: 5%;
+        }
+    }
+
+    /******************* PROJECT SECTION MEDIA QUERIES END (TABLET)*****************************/
 
     /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
     @keyframes shrink {
@@ -170,6 +200,12 @@
                 font-size: 3rem;
             }
         }
+        h3 {
+            font-size: 2rem;
+            line-height: 2rem;
+            text-align: center;
+        }
+
         p {
             font-size: 0.9rem;
             line-height: 1.3rem;
@@ -211,20 +247,58 @@
         ul {
             max-width: 100%;
         }
+        .asterik {
+            right: -12%;
+        }
 
         .hashtag {
-            top: 5%;
-            right: -25%;
-            max-width: 50%;
+            display: none;
         }
 
         .semicolon {
-            left: -15%;
-        }
-
-        .curlyBracket {
             left: -10%;
         }
     }
     /******************* TOOLKIT SECTION MEDIA QUERIES END (MOBILE)*****************************/
+
+    /******************* PROJECT SECTION MEDIA QUERIES START (MOBILE)*****************************/
+    .projects {
+        ul {
+            li {
+                flex-direction: column;
+                z-index: 1;
+                &:nth-child(2) {
+                    flex-direction: column;
+                    align-self: center;
+                    margin: 0;
+                }
+                img {
+                    align-self: center;
+                }
+            }
+        }
+        .projectText {
+            margin-left: 0;
+            p:first-child {
+                text-align: center;
+            }
+        }
+        svg {
+            z-index: -1;
+        }
+        .exclamationMark {
+            top: 10%;
+            left: -16%;
+        }
+        .quotes{
+            top: 40%;
+                right: -20%;
+        }
+        .arrowFunction {
+            bottom: 12%;
+            left: -19%;
+            max-width: 40%;
+        }
+    }
+    /******************* PROJECT SECTION MEDIA QUERIES END (MOBILE)*****************************/
 }

@@ -14,17 +14,11 @@
         li {
             display: flex;
             flex-direction: row;
-            max-width: 60%;
-            .projectText{
-                margin-left: 50px;
-            }   
+            max-width: 60%; 
             &:nth-child(2){
                 flex-direction: row-reverse;
                 align-self: flex-start;
-                margin: 0 50px 0 0;
-                .projectText {
-                        margin: 0 50px 0 0;
-                    }
+                // margin: 0 50px 0 0;
             }
             img {
                 align-self: flex-start;
@@ -32,6 +26,9 @@
                 max-width: 50%;
             }
         }
+    }
+    .projectText {
+        margin-left: 50px;
     }
     svg {
         position: absolute;
