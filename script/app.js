@@ -8,8 +8,7 @@ const form =  document.querySelector('form');
 
 const formButton = document.querySelector('form button');
 
-
-console.log(introSentence);
+// the debounc function limits the scroll events to avoid the system from being overwhelmed
 function debounce(func, wait = 20, immediate = true) {
     var timeout;
     return function () {
@@ -27,33 +26,19 @@ function debounce(func, wait = 20, immediate = true) {
 
 function animateIntro(e) {
     
-    // const animateAt = (window.scrollY + window.innerHeight) - introSentence.offsetHeight / 11;
-    // // const animateAt = (window.scrollY + window.innerHeight) - introSentence.offsetTop;
+    // This gets the number of pixels from the top of the page and provides size of the users viewport
+    const {scrollTop, usersViewport} = document.documentElement;
 
-    // const paragraphBottom = introSentence.offsetTop + introSentence.offsetHeight;
+    // this provides the distance from the top of the element to the top of the users viewport 
+    const elementToTopOfViewport = introSentence.getBoundingClientRect().top;
 
-    // const isHalfShown = animateAt > introSentence.offsetTop;
-
-    // const isNotScrolledPast = window.scrollY < paragraphBottom;
-
-    // if (isHalfShown && isNotScrolledPast){
-    //     introSentence.classList.add('active');
-    //     headerIntro.classList.add('active');
-    //     headerWrapper.classList.add('active');
-    // }
-
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    const topElementToTopViewport = introSentence.getBoundingClientRect().top;
-
-    if (scrollTop < (scrollTop + topElementToTopViewport).toFixed()) {
+    // if the distance from the top of the screen is greater than the top of element + the distance to the top of the page add a class of active to initiate animations 
+    if (scrollTop < (scrollTop + elementToTopOfViewport).toFixed()) {
         introSentence.classList.add('active');
         headerIntro.classList.add('active');
         headerWrapper.classList.add('active');
 
     }
-
-    // console.log(animateAt);
 }
 
 window.addEventListener('scroll', debounce(animateIntro));
