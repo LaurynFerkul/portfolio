@@ -165,6 +165,32 @@
 
     /******************* PROJECT SECTION MEDIA QUERIES END (TABLET)*****************************/
 
+    /******************* CONTACT SECTION MEDIA QUERIES START (TABLET) *****************************/
+    .contact {
+        flex-direction: column;
+
+        strong {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+    }
+    /******************* CONTACT SECTION MEDIA QUERIES END (TABLET) *****************************/
+
+    /******************* FOOTER SECTION MEDIA QUERIES START (TABLET) *****************************/
+    footer {
+        flex-direction: column;
+        svg {
+            margin-top: 20px;
+            flex-basis: 100%;
+        }
+        p {
+            align-self: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    /******************* FOOTER SECTION MEDIA QUERIES END (TABLET) *****************************/
+
     /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
     @keyframes shrink {
         from {
@@ -186,7 +212,9 @@
             right: -35%;
         }
     }
+
     /******************* KEYFRAMES MEDIA QUERIES END (TABLET) *****************************/
+
 }
 
 @media (max-width: 700px) {
@@ -301,4 +329,13 @@
         }
     }
     /******************* PROJECT SECTION MEDIA QUERIES END (MOBILE)*****************************/
+
+    /******************* CONTACT SECTION MEDIA QUERIES START (MOBILE)*****************************/
+       .contact {
+            strong {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+       }
+    /******************* CONTACT SECTION MEDIA QUERIES END (MOBILE)*****************************/
 }

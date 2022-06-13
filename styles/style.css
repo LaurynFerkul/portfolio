@@ -393,7 +393,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
@@ -793,10 +793,6 @@ header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.contact h2 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 .contactInfo {
@@ -1309,6 +1305,39 @@ footer p {
   }
 
   /******************* PROJECT SECTION MEDIA QUERIES END (TABLET)*****************************/
+  /******************* CONTACT SECTION MEDIA QUERIES START (TABLET) *****************************/
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact strong {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  /******************* CONTACT SECTION MEDIA QUERIES END (TABLET) *****************************/
+  /******************* FOOTER SECTION MEDIA QUERIES START (TABLET) *****************************/
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer svg {
+    margin-top: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  footer p {
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /******************* FOOTER SECTION MEDIA QUERIES END (TABLET) *****************************/
   /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
   @-webkit-keyframes shrink {
     from {
@@ -1450,4 +1479,11 @@ footer p {
   }
 
   /******************* PROJECT SECTION MEDIA QUERIES END (MOBILE)*****************************/
+  /******************* CONTACT SECTION MEDIA QUERIES START (MOBILE)*****************************/
+  .contact strong {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  /******************* CONTACT SECTION MEDIA QUERIES END (MOBILE)*****************************/
 }
