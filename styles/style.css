@@ -389,6 +389,10 @@ html {
   scroll-behavior: smooth;
   -ms-scroll-snap-type: mandatory;
       scroll-snap-type: mandatory;
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -893,6 +897,9 @@ form button:hover .htmlTags, form button:focus .htmlTags {
 .socialLinks svg {
   margin: 10px 10px;
 }
+.socialLinks svg:hover path {
+  fill: #FEBC65;
+}
 
 .contactOptions {
   margin: 0 auto;
@@ -1316,6 +1323,25 @@ footer p {
     font-size: 5rem;
     line-height: 5rem;
   }
+  .contact a {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  form input,
+form textarea {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    padding: 15px 0 15px 15px;
+  }
+  form button {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  form button .htmlTags {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
 
   /******************* CONTACT SECTION MEDIA QUERIES END (TABLET) *****************************/
   /******************* FOOTER SECTION MEDIA QUERIES START (TABLET) *****************************/
@@ -1327,8 +1353,7 @@ footer p {
   }
   footer svg {
     margin-top: 20px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    max-width: 100%;
   }
   footer p {
     -ms-flex-item-align: center;
@@ -1435,6 +1460,9 @@ footer p {
 
   /******************* TOOLKIT SECTION MEDIA QUERIES END (MOBILE)*****************************/
   /******************* PROJECT SECTION MEDIA QUERIES START (MOBILE)*****************************/
+  .projects ul {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
   .projects ul li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1462,6 +1490,7 @@ footer p {
     text-align: center;
   }
   .projects svg {
+    -webkit-transform: translate3d(0, 0, 0);
     z-index: -1;
   }
   .projects .exclamationMark {
@@ -1483,6 +1512,25 @@ footer p {
   .contact strong {
     font-size: 3rem;
     line-height: 3rem;
+  }
+  .contact a {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+
+  form input,
+form textarea {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding: 10px 0 10px 10px;
+  }
+  form button {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  form button .htmlTags {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
 
   /******************* CONTACT SECTION MEDIA QUERIES END (MOBILE)*****************************/

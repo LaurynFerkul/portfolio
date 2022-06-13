@@ -173,6 +173,30 @@
             font-size: 5rem;
             line-height: 5rem;
         }
+        a {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    form {
+
+        input,
+        textarea {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            padding: 15px 0 15px 15px;
+        }
+
+        button {
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+
+            .htmlTags {
+                font-size: 1.1rem;
+                line-height: 1.6rem;
+            }
+        }
     }
     /******************* CONTACT SECTION MEDIA QUERIES END (TABLET) *****************************/
 
@@ -181,7 +205,7 @@
         flex-direction: column;
         svg {
             margin-top: 20px;
-            flex-basis: 100%;
+            max-width: 100%;
         }
         p {
             align-self: center;
@@ -189,6 +213,7 @@
             margin-top: 20px;
         }
     }
+    
     /******************* FOOTER SECTION MEDIA QUERIES END (TABLET) *****************************/
 
     /******************* KEYFRAMES MEDIA QUERIES START (TABLET) *****************************/
@@ -292,6 +317,7 @@
     /******************* PROJECT SECTION MEDIA QUERIES START (MOBILE)*****************************/
     .projects {
         ul {
+            -webkit-transform: translate3d(0, 0, 0);
             li {
                 flex-direction: column;
                 z-index: 1;
@@ -312,6 +338,7 @@
             }
         }
         svg {
+            -webkit-transform: translate3d(0, 0, 0);
             z-index: -1;
         }
         .exclamationMark {
@@ -336,6 +363,26 @@
                 font-size: 3rem;
                 line-height: 3rem;
             }
+            a {
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+            }
+       }
+       form {
+            input,
+            textarea {
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+                padding: 10px 0 10px 10px;
+            }
+            button {
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+                .htmlTags {
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
+                }
+           }
        }
     /******************* CONTACT SECTION MEDIA QUERIES END (MOBILE)*****************************/
 }

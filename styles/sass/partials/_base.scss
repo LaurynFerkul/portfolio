@@ -3,6 +3,10 @@ html {
     background-color: $background;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+}
+
+html, 
+body {
     overflow-x: hidden;
 }
 

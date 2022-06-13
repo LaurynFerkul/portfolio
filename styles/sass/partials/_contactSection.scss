@@ -69,6 +69,11 @@ form {
     justify-content: center;
     svg {
         margin: 10px 10px;
+        &:hover{
+            path {
+                fill: #FEBC65;
+            }
+        }
     }
 }
 
