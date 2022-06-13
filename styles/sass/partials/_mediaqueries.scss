@@ -31,7 +31,7 @@
         }
 
         to {
-            font-size: 10rem;
+            font-size: 3rem;
         }
     }
     /******************* KEYFRAMES MEDIA QUERIES END (LARGE SCREEN) *****************************/
@@ -87,14 +87,14 @@
     .introSentence{
         &.active {
             p {
-                font-size: 5vw;
-                line-height: 5vw;
+                font-size: 4vw;
+                line-height: 4vw;
                 strong {
-                    font-size: 5vw;
-                    line-height: 5vw;
+                    font-size: 4vw;
+                    line-height: 4vw;
                 }
                 .htmlTags {
-                    font-size: 5vw;
+                    font-size: 4vw;
                 }
             }
         }

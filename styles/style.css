@@ -333,7 +333,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -1115,7 +1115,7 @@ footer p {
       font-size: 19rem;
     }
     to {
-      font-size: 10rem;
+      font-size: 3rem;
     }
   }
   @keyframes shrink {
@@ -1123,7 +1123,7 @@ footer p {
       font-size: 19rem;
     }
     to {
-      font-size: 10rem;
+      font-size: 3rem;
     }
   }
   /******************* KEYFRAMES MEDIA QUERIES END (LARGE SCREEN) *****************************/
@@ -1175,15 +1175,15 @@ footer p {
   }
 
   .introSentence.active p {
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
   .introSentence.active p strong {
-    font-size: 5vw;
-    line-height: 5vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
   .introSentence.active p .htmlTags {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   /******************* HEADER MEDIA QUERIES END (TABLET) *****************************/
