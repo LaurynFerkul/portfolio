@@ -6,6 +6,8 @@ const headerWrapper = document.querySelector('header .wrapper');
 
 const form =  document.querySelector('form');
 
+const formButton = document.querySelector('form button');
+
 
 console.log(introSentence);
 function debounce(func, wait = 20, immediate = true) {

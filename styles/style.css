@@ -228,70 +228,6 @@ html {
 
 /* site fonts */
 /* site colours */
-/* import Zodiak font */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak/Zodiak-Regular.woff2") format("woff2"), url("../fonts/Zodiak/Zodiak-Regular.woff") format("woff"), url("../fonts/Zodiak/Zodiak-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-/* import Zodiak font in italic */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak-Italic.woff2") format("woff2"), url("../fonts/Zodiak-Italic.woff") format("woff"), url("../fonts/Zodiak-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
-}
-/* import Zodiak font in light */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak/Zodiak-Light.woff2") format("woff2"), url("../fonts/Zodiak/Zodiak-Light.woff") format("woff"), url("../fonts/Zodiak/Zodiak-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  font-style: normal;
-}
-/* import Zodiak font in bold */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak-Bold.woff2") format("woff2"), url("../fonts/Zodiak-Bold.woff") format("woff"), url("../fonts/Zodiak-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-/* import Zodiak font in bold italic */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak/Zodiak-BoldItalic.woff2") format("woff2"), url("../fonts/Zodiak/Zodiak-BoldItalic.woff") format("woff"), url("../fonts/Zodiak/Zodiak-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: italic;
-}
-/* import Zodiak font in black */
-@font-face {
-  font-family: "Zodiak";
-  src: url("../fonts/Zodiak/Zodiak-Black.woff2") format("woff2"), url("../fonts/Zodiak/Zodiak-Black.woff") format("woff"), url("../fonts/Zodiak/Zodiak-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-/* import Cabinet Grotesk font */
-@font-face {
-  font-family: "CabinetGrotesk";
-  src: url("../fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2") format("woff2"), url("../fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff") format("woff"), url("../fonts/CabinetGrotesk/CabinetGrotesk-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-/* import Cabinet Grotesk font in extrabold */
-@font-face {
-  font-family: "CabinetGrotesk";
-  src: url("../fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2") format("woff2"), url("../fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff") format("woff"), url("../fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.ttf") format("truetype");
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
-}
 html {
   font-size: 125%;
 }
@@ -310,7 +246,7 @@ h1,
 h2,
 h3,
 .htmlTags {
-  font-family: "Zodiak";
+  font-family: "Zodiak", serif;
   font-size: 3rem;
 }
 
@@ -352,7 +288,7 @@ h3 {
 
 p,
 a {
-  font-family: "CabinetGrotesk";
+  font-family: "Cabinet Grotesk", sans-serif;
 }
 
 h3 {
@@ -517,7 +453,7 @@ header .wrapper {
           animation: fadeIn 3s 1;
 }
 .introSentence.active p {
-  font-family: "Zodiak";
+  font-family: "Zodiak", serif;
   text-align: center;
   font-size: 3vw;
   line-height: 3vw;
@@ -829,7 +765,7 @@ form {
 }
 form input,
 form textarea {
-  font-family: "CabinetGrotesk";
+  font-family: "Cabinet Grotesk", sans-serif;
   color: #206BB1;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -862,7 +798,7 @@ form textarea {
   margin: 15px 0;
 }
 form button {
-  font-family: "CabinetGrotesk";
+  font-family: "Cabinet Grotesk", sans-serif;
   color: #206BB1;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -873,7 +809,7 @@ form button {
   margin: 0 auto;
 }
 form button .htmlTags {
-  font-family: "CabinetGrotesk";
+  font-family: "Cabinet Grotesk", sans-serif;
   color: #206BB1;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -905,7 +841,7 @@ form button:hover .htmlTags, form button:focus .htmlTags {
   margin: 0 auto;
 }
 .contactOptions a {
-  font-family: "CabinetGrotesk";
+  font-family: "Cabinet Grotesk", sans-serif;
   color: #206BB1;
   font-weight: 400;
   text-transform: lowercase;
