@@ -34,6 +34,15 @@
             font-size: 3rem;
         }
     }
+    @keyframes changePosition {
+        from {
+            right: -5%;
+        }
+
+        to {
+            right: -40%;
+        }
+    }
     /******************* KEYFRAMES MEDIA QUERIES END (LARGE SCREEN) *****************************/
 }
 
@@ -143,14 +152,19 @@
 
     /******************* PROJECT SECTION MEDIA QUERIES START (TABLET)*****************************/
     .projects {
+        -webkit-transform: translate3d(0, 0, 0);
         h2 {
             align-self: center;
         }
         ul {
             li {
+                z-index: 1;
                 max-width: 100%;
                 margin: 40px 0;
             }
+        }
+        svg{
+            z-index: -1;
         }
         .exclamationMark{
             top: 31%;
@@ -317,10 +331,8 @@
     /******************* PROJECT SECTION MEDIA QUERIES START (MOBILE)*****************************/
     .projects {
         ul {
-            -webkit-transform: translate3d(0, 0, 0);
             li {
                 flex-direction: column;
-                z-index: 1;
                 &:nth-child(2) {
                     flex-direction: column;
                     align-self: center;
@@ -336,9 +348,6 @@
             p:first-child {
                 text-align: center;
             }
-        }
-        svg {
-            z-index: -1;
         }
         .exclamationMark {
             top: 10%;
