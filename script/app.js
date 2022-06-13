@@ -4,6 +4,8 @@ const introSentence = document.querySelector('.introSentence');
 
 const headerWrapper = document.querySelector('header .wrapper');
 
+const form =  document.querySelector('form');
+
 
 console.log(introSentence);
 function debounce(func, wait = 20, immediate = true) {
@@ -52,8 +54,4 @@ function animateIntro(e) {
     // console.log(animateAt);
 }
 
-
 window.addEventListener('scroll', debounce(animateIntro));
-
-
-// when the header height plus scroll height is more add class
