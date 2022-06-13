@@ -1448,6 +1448,9 @@ form textarea {
   .toolkit ul {
     max-width: 100%;
   }
+  .toolkit svg {
+    max-width: 50%;
+  }
   .toolkit .asterik {
     right: -12%;
   }
@@ -1490,7 +1493,6 @@ form textarea {
     text-align: center;
   }
   .projects svg {
-    -webkit-transform: translate3d(0, 0, 0);
     z-index: -1;
   }
   .projects .exclamationMark {

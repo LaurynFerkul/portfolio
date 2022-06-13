@@ -300,6 +300,9 @@
         ul {
             max-width: 100%;
         }
+        svg {
+            max-width: 50%;
+        }
         .asterik {
             right: -12%;
         }
@@ -338,7 +341,6 @@
             }
         }
         svg {
-            -webkit-transform: translate3d(0, 0, 0);
             z-index: -1;
         }
         .exclamationMark {
