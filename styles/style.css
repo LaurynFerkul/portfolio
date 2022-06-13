@@ -1446,7 +1446,7 @@ form textarea {
   /******************* ABOUT ME SECTION MEDIA QUERIES END (MOBILE)*****************************/
   /******************* TOOLKIT SECTION MEDIA QUERIES START (MOBILE)*****************************/
   .toolkit ul {
-    max-width: 70%;
+    max-width: 100%;
   }
   .toolkit .asterik {
     right: -12%;
